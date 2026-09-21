@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Для тебя, любимая киса ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:#fff;overflow-x:hidden;
+  background:
+    radial-gradient(circle at 15% 15%,rgba(145,80,180,.22),transparent 30%),
+    radial-gradient(circle at 85% 75%,rgba(210,75,135,.16),transparent 32%),
+    #08070d;
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;opacity:.55;
+ background-image:radial-gradient(1px 1px at 20% 30%,#fff,transparent),
+ radial-gradient(1px 1px at 70% 20%,#fff,transparent),
+ radial-gradient(1px 1px at 40% 70%,#fff,transparent),
+ radial-gradient(1px 1px at 90% 60%,#fff,transparent),
+ radial-gradient(1px 1px at 10% 80%,#fff,transparent),
+ radial-gradient(1px 1px at 55% 45%,#fff,transparent);
+ background-size:250px 250px;animation:stars 8s linear infinite;
+}
+@keyframes stars{to{transform:translateY(-30px)}}
+section{min-height:100vh;padding:80px 20px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.hero{text-align:center}
+.hero h1{font-size:clamp(36px,10vw,66px);line-height:1.1;margin-bottom:24px;text-shadow:0 0 30px rgba(255,120,180,.35)}
+.hero p{font-size:19px;line-height:1.7;color:#d8d2dc}
+.heart{display:inline-block;animation:heartbeat 1.8s infinite}
+@keyframes heartbeat{50%{transform:scale(1.18)}}
+.button{
+ margin-top:38px;padding:17px 24px;border-radius:50px;
+ border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);
+ color:#fff;font-size:16px;backdrop-filter:blur(12px);
+ box-shadow:0 0 30px rgba(180,100,180,.15);cursor:pointer;transition:.3s
+}
+.button:active{transform:scale(.97)}
+.content{max-width:750px;width:100%}
+h2{text-align:center;font-size:32px;line-height:1.35;margin-bottom:32px}
+h3{font-size:24px;margin-bottom:18px}
+p{color:#d9d5dc;line-height:1.8;font-size:17px}
+.story{
+ background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);
+ border-radius:28px;padding:24px;margin:24px 0;
+ box-shadow:0 15px 50px rgba(0,0,0,.25);backdrop-filter:blur(12px)
+}
+.photo{width:100%;border-radius:22px;margin-bottom:24px;display:block;box-shadow:0 15px 45px rgba(0,0,0,.4)}
+.date{color:#d99ac2;font-size:14px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.final{text-align:center}
+.hidden-message{display:none;margin-top:40px;text-align:center;animation:appear 2s ease forwards}
+.hidden-message p{font-size:21px;line-height:1.8}
+@keyframes appear{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.floating{position:fixed;pointer-events:none;font-size:25px;animation:fly 4s linear forwards;z-index:100}
+@keyframes fly{0%{transform:translateY(0) scale(.5) rotate(0);opacity:0}15%{opacity:1}100%{transform:translateY(-100vh) scale(1.5) rotate(360deg);opacity:0}}
+.footer{min-height:auto;padding:60px 20px;text-align:center}
+.footer p{color:#77717c;font-size:14px}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1>Для тебя, любимая киса <span class="heart">❤️</span></h1>
+  <p>Есть те моменты, которые хочется прожить ещё раз…</p>
+  <button class="button" onclick="document.getElementById('story').scrollIntoView()">
+    Давай вместе вспомним приятные моменты
+  </button>
+</section>
+
+<section id="story">
+<div class="content">
+
+<h2>Первое наше знакомство</h2>
+
+<div class="story">
+  <img src="photo1.jpg" class="photo" alt="Наша первая совместная фотография">
+  <div class="date">18.04</div>
+  <p>
+    Мы начали общаться 18.04. Тогда мы ещё и подумать не могли,
+    что всё зайдёт настолько далеко.
+  </p><br>
+  <p>
+    А сейчас я смотрю назад и понимаю, насколько этот день для меня
+    важен. Тут наша первая совместная фотка, она мне очень сильно нравится —
+    смотря на неё, я вспоминаю наше знакомство и первые прогулки.
+  </p>
+</div>
+
+<div class="story">
+  <h3>Наши первые моменты</h3>
+  <p>
+    Помнишь первую нашу переписку, где мы задавали друг другу
+    однотипные вопросы по типу: «На кого учишься?», «Как учишься?» и так далее.
+  </p><br>
+  <p>
+    Наша первая встреча была незабываемой. Помнишь неловкий момент,
+    как при встрече вдвоём мы не знали, как поздороваться друг с другом.
+  </p><br>
+  <div class="date">23.04</div>
+  <p>
+    23 апреля мы перешли на новый уровень — отношения.
+    Удивительно, как за такое маленькое время мы начали встречаться,
+    узнавать друг друга и создавать что-то своё. И это прекрасно по сей день.
+  </p>
+</div>
+
+<h2>Я помню…</h2>
+
+<div class="story">
+  <div class="date">28.04</div>
+  <h3>Первое «Я тебя люблю» ❤️</h3>
+  <p>
+    А я напомню — 28 апреля. Вот тебе фотка, как я впервые это написал.
+    Ты этого ждала)
+  </p><br>
+  <img src="love-chat.jpg" class="photo" alt="Скриншот нашей переписки">
+</div>
+
+<div class="story">
+  <div class="date">28.05</div>
+  <h3>Наш первый поход в кино 🎬</h3>
+  <p>
+    Первый раз, как мы сходили в замечательное место — в кино.
+    Эта дата, 28 мая, оставила очень много позитивных эмоций.
+  </p>
+</div>
+
+<div class="story">
+  <h3>Та самая маленькая корзинка цветов 🌷</h3>
+  <p>
+    Помнишь, как я подарил маленькую скромную корзинку цветов?)
+    Выходя гулять, ты ничего не думала и не ожидала, что я что-то подарю.
+  </p><br>
+  <p>
+    Твоя улыбка для меня важнее, чем потраченные деньги.
+  </p>
+</div>
+
+</div>
+</section>
+
+<section class="final">
+<div class="content">
+  <h2>И знаешь… я хочу, чтобы это было только началом нашей истории. ❤️</h2>
+  <button class="button" onclick="showLove()">Нажимай сюда</button>
+  <div id="loveMessage" class="hidden-message">
+    <p>❤️ ✨ ⭐ 💗 ✨ ❤️</p><br>
+    <p>И знай что я всегда буду тебя любить.</p>
+    <p>Я искренно и от всего сердца сделал это.</p><br>
+    <p>Люблю тебя, киса ❤️</p>
+  </div>
+</div>
+</section>
+
+<div class="footer"><p>Сделано с любовью специально для тебя ❤️</p></div>
+
+<script>
+function showLove(){
+  document.getElementById("loveMessage").style.display="block";
+  const symbols=["❤️","💗","💕","✨","⭐","💖"];
+  for(let i=0;i<45;i++){
+    setTimeout(()=>{
+      const e=document.createElement("div");
+      e.className="floating";
+      e.innerText=symbols[Math.floor(Math.random()*symbols.length)];
+      e.style.left=Math.random()*100+"vw";
+      e.style.bottom="-30px";
+      e.style.animationDuration=(3+Math.random()*3)+"s";
+      document.body.appendChild(e);
+      setTimeout(()=>e.remove(),6500);
+    },i*90);
+  }
+}
+</script>
+</body>
+</html>
